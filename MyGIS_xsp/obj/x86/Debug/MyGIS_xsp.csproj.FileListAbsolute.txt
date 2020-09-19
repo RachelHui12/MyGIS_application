@@ -1,0 +1,14 @@
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\bin\Debug\MyGIS_xsp.exe
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\bin\Debug\MyGIS_xsp.pdb
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.MyGIS.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.Properties.Resources.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.csproj.GenerateResource.Cache
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.exe
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.pdb
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.AttributeQuery.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.SpatialQuery.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.csprojResolveAssemblyReference.cache
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.BufferForm.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.OverlayForm.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.EditingLayer.resources
+E:\2017302590041\MyGIS_xsp\MyGIS_xsp\obj\x86\Debug\MyGIS_xsp.ResultForm.resources

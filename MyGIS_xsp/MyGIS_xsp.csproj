@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B18FCBD0-A28F-459F-813D-9DE8A20FEC89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyGIS_xsp</RootNamespace>
+    <AssemblyName>MyGIS_xsp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.AxControls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Carto">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessing, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geoprocessor, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.GlobeCore, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.NetworkAnalysis, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Output, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Version, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeQuery.Designer.cs">
+      <DependentUpon>AttributeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BufferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BufferForm.Designer.cs">
+      <DependentUpon>BufferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit.cs" />
+    <Compile Include="EditingLayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditingLayer.Designer.cs">
+      <DependentUpon>EditingLayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FixedZoomIn.cs" />
+    <Compile Include="FixedZoomOut.cs" />
+    <Compile Include="MyGIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyGIS.Designer.cs">
+      <DependentUpon>MyGIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverlayForm.Designer.cs">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pan.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultForm.Designer.cs">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpatialQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpatialQuery.Designer.cs">
+      <DependentUpon>SpatialQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomIn.cs" />
+    <Compile Include="ZoomOut.cs" />
+    <EmbeddedResource Include="AttributeQuery.resx">
+      <DependentUpon>AttributeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BufferForm.resx">
+      <DependentUpon>BufferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditingLayer.resx">
+      <DependentUpon>EditingLayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyGIS.resx">
+      <DependentUpon>MyGIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlayForm.resx">
+      <DependentUpon>OverlayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultForm.resx">
+      <DependentUpon>ResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpatialQuery.resx">
+      <DependentUpon>SpatialQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixedZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixedZoomIn1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FixedZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullExtent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZoomIn.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixedZoomIn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixedZoomIn.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ZoomOut.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixedZoomOut.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FixedZoomOut.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pan.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pan.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
